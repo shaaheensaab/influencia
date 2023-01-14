@@ -1,0 +1,137 @@
+/*--- fonts style ---*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*----- common styles ------*/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 70%;
+    margin: 50px auto;
+}
+.hide{
+    display: none;
+}
+/*-----------style----------*/
+
+/*----------------------- header started from here --------------*/
+.mobile-nav{
+    display: none;
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{
+    font-size: 1.5em;
+}
+nav ul{
+    font-size: 1.2em;
+    gap: 30px;
+    display: flex;
+    list-style-type: none;
+}
+/*---------------- header ended here -----------------*/
+
+/*----------------- featured section started from here -------------*/
+.featured-section{
+    display: flex;
+    align-items: center;
+}
+.featured-info h1{
+    font-size: 4em;
+}
+.featured-info p{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.preebook-btn{
+    padding: 15px 25px;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    background-color: #E02C6D;
+}
+.featured-img{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+}
+/*-------------- featured section ended here --------------*/
+
+/* ------------branding section started from here -------------*/
+.branding-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid #fafafa;
+    border-bottom: 2px solid #fafafa;
+    padding: 30px;
+}
+/* -----------branding section ended here -----------------*/
+
+/* ----------product section started from here ------------- */
+.product-section > h1{
+    font-size: 2em;
+    text-align: center;
+}
+.product-container{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.product{
+    background-color:#fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+.product-img img{
+    width: 100%;
+}
+.product-rating{
+    display: flex;
+    gap: 10px;
+}
+.filled{
+    color: #FB8200;
+}
+.empty{
+    color: #ddd;
+}
+.product-rating ul{
+    display: flex;
+    list-style-type: none;
+}
+/* ----------product section ended here ----------------- */
+
+
+/* @media: responsive declaration */
+
+@media screen and (max-width: 576px ) {
+    nav{
+        display: none;
+    }
+    .mobile-nav{
+        display:flex;
+        justify-content: space-between;
+    }
+    .mobile-nav-btn{
+        border: none;
+        font-size: 1.5em;
+        background-color: transparent;
+    }
+}
